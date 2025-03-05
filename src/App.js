@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import axios from 'axios';
 
 function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/getData')
-      .then(response => response.json())
-      .then(data => setData(data))
+    axios.get('http://localhost:8080/api/getData')
+      .then(response => setData(response.data))
       .catch(error => console.error(error));
   }, []);
 
@@ -15,8 +14,8 @@ function App() {
     <div>
       {data ? (
         <div>
-          <p>Mensagem: {data.message}</p>
-          <p>Status: {data.status}</p>
+          <p>{data.message}</p>
+          <p>{data.status}</p>
         </div>
       ) : (
         <p>Carregando...</p>
