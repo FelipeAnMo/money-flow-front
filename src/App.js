@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import axios from 'axios';
+import './App.css';
 
 function App() {
   const [data, setData] = useState(null);
