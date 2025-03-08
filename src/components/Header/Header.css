@@ -1,0 +1,23 @@
+header {
+    height: 80px;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+}
+
+#box-header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+#box-logo {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: default;
+}
+
+#box-logo span {
+    color: #94d123;
+}
