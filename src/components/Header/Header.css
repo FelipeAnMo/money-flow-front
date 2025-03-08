@@ -1,6 +1,6 @@
 header {
     height: 80px;
-    background-color: #2e2e2e;
+    background-color: var(--header-bg-color);
     display: flex;
     justify-content: center;
 }
@@ -12,12 +12,12 @@ header {
 }
 
 #box-logo {
-    color: #FFF;
+    color: var(--text-color-light);
     font-size: 28px;
     font-weight: bold;
     cursor: default;
 }
 
 #box-logo span {
-    color: #94d123;
+    color: var(--logo-color);
 }
