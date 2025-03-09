@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+import NavegationHeader from '../components/NavegationHeader/NavegationHeader';
 
 function Home() {
   return (
     <div>
-      <Header />
-      
-      <Footer />
+      <Header/>
+      <NavegationHeader/>
+      <Footer/>
     </div>
   );
 }
