@@ -1,9 +1,10 @@
 header {
+    width: 100vw;
     height: 80px;
     background-color: var(--header-bg-color);
     display: flex;
     justify-content: center;
-    position: relative;
+    position: fixed;
     z-index: 10;
 }
 
