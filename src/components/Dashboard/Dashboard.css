@@ -1,0 +1,87 @@
+#dashboard {
+    width: 100%;
+    margin: 18px 18px 0px 120px;
+    display: flex;
+    justify-content: center;
+}
+
+#box-dashboard {
+    width: 100%;
+    max-width: 1100px;
+    background-color: var(--header-bg-color);
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem 1.4rem 1.6rem 1.4rem;
+    border-radius: 12px;
+    box-shadow: #00000066 0px 2px 4px, 
+        #0000004d 0px 7px 13px -3px, 
+        #00000033 0px -3px 0px inset;
+}
+
+#box-dashboard-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: 0.6px;
+    position: relative;
+}
+
+#box-dashboard-title::after {
+    background-color: var(--lateral-header-border-color);
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 98%;
+    height: 1px;
+    transform: translateX(-50%);
+}
+
+#box-dashboard-title h2 {
+    font-family: "Poetsen One", sans-serif;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#box-dashboard-title h2 i {
+    font-size: 22px;
+    margin: 2px 8px 0px 0px;
+}
+
+.box-dashboard-content-chats {
+    width: 50%;
+    background-color: var(--lateral-header-border-color);
+    padding: 20px 0px;
+    border-radius: 16px;
+    box-shadow: #00000066 0px 2px 4px, 
+        #0000004d 0px 7px 13px -3px, 
+        #00000033 0px -3px 0px inset;
+}
+
+.box-dashboard-content-chats-title {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.box-dashboard-content-chats-title h3 {
+    font-weight: 600;
+    padding: 2px 4px;
+    margin: 3px 0px 3px 15px;
+    border-left: 2px solid var(--text-color-light);
+}
+
+.box-dashboard-content-chats-content {
+    display: flex;
+    justify-content: center;
+}
+
+.box-dashboard-content-chats-content > div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
